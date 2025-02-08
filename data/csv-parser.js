@@ -2,7 +2,7 @@ const fs = require('fs');
 const csv = require('csv-parser');
 const results = [];
 
-fs.createReadStream('./downloads/goodreads_library_export.csv')
+fs.createReadStream('../downloads/goodreads_library_export.csv')
   .pipe(csv())
   .on('data', (data) => {
 
